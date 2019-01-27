@@ -1,0 +1,5 @@
+<% @users.each do |user| %>
+  <%= image_tag(user.avatar, class:'box-150') %>
+  <%= link_to user.email, user %>
+  <%= user.id %>
+<% end %>

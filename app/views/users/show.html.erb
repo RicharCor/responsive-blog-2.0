@@ -1,0 +1,30 @@
+<ul>
+  <% @posts.each do |post| %>
+    <li>
+      <%= post.user.username %> creó un <%= link_to "artículo", post %> hace <%= time_ago_in_words(post.created_at) %>
+    </li>
+  <% end %>
+</ul>
+
+|
+
+<ul>
+  <% @comments.each do |comment| %>
+    <li>
+      <% if comment.post.user == @user %>
+        <%= comment.user.username %> <%= link_to "comentó", post_comment_path(comment.post, comment) %> su <%= link_to "artículo", comment.post %> hace <%= time_ago_in_words(comment.created_at) %>
+      <% else %>
+        <%= comment.user.username %> <%= link_to "comentó", post_comment_path(comment.post, comment) %> un <%= link_to "artículo", comment.post %> hace <%= time_ago_in_words(comment.created_at) %>
+      <% end %>
+    </li>  <% end %>
+</ul>
+
+|
+
+<ul>
+  <% @tags.each do |tag| %>
+    <li>
+      <%= tag.user.username %> creó una <%= link_to "etiqueta", tag %> hace <%= time_ago_in_words(tag.created_at) %>
+    </li>
+  <% end %>
+</ul>

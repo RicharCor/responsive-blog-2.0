@@ -1,0 +1,7 @@
+<% if @twitch.disconnected? %>
+  Desconectado
+  <%= link_to 'Conectar', connect_twitch_path(@twitch.id), method: :put %>
+<%else%>
+  Conectado
+  <%= link_to 'Desconectar', disconnect_twitch_path(@twitch.id), method: :put %>
+<%end%>

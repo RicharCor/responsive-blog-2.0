@@ -1,0 +1,9 @@
+<% @post.comments.each do |comment| %>
+  <li>
+    <%= comment.body %>
+    <%= comment.user.email %>
+    <%= comment.post_id %>
+
+    <%= link_to comment.id, [@post, comment] %>
+  </li>
+<% end %>

@@ -1,0 +1,16 @@
+#twitch{ background: rgb(75, 54, 124); }
+#youtube{ background: #c0392b; }
+#github{ background: #000000; }
+#gist{ background: #191919; }
+#twitch:hover, #youtube:hover, #github:hover, #gist:hover{
+  opacity: 0.8;
+}
+.social-info-container:after{
+  content: "";
+  border-right: #fff 2px solid;
+  position: absolute;
+  z-index: 1;
+  top: 50px;
+  bottom: 50px;
+  left: 0px;
+}

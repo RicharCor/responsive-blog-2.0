@@ -1,0 +1,30 @@
+*{
+  padding: 0;
+  margin: 0;
+  /* Cambia la fuente de toda la pagina */
+  font-family: 'Sarabun', sans-serif;
+  /* Permite que el padding este dentro del objeto y no fuera */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar{
+  /* Oculta el scrollbar */
+  width: 0px;
+}
+html{
+  background: #fafafa;
+  overflow: scroll;
+}
+#global-box{
+  margin: 0px auto;
+  max-width: 1920px !important;
+  position: relative;
+}
+ul{
+  list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #3498db;
+}

@@ -1,0 +1,29 @@
+/* Vista responsiva del header */
+@media screen and (max-width: 1024px){
+  .navbar-ul, .user-ul{
+    width: 80%;
+    height: 100%;
+  }
+  .navbar-ul{
+    position: fixed;
+    top: 65px;
+    left: 0px;
+  }
+  .navbar-ul li{
+    float: none;
+  }
+  .show-user-ul{
+    position: absolute;
+    right: 0px;
+  }
+  .show-navbar-ul, .show-user-ul{
+    position: absolute;
+  }
+  .show-navbar-ul{
+    display: block;
+    left: 0px;
+  }
+  .show-user-ul{
+    right: 0px;
+  }
+}

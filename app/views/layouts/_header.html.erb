@@ -1,0 +1,54 @@
+<header class="z-index-2 dark-blue box-shadow">
+	<nav>
+		<ul class="show-navbar-ul display-none">
+			<li>
+				<a><i class="fa fa-bars fa-2x"></i></a>
+			</li>
+		</ul>
+
+		<div class="height-65 left flex center-items">
+				<p class="font-27 margin-left-20"><%= link_to 'Blog', root_path, class: 'white-font' %></p>
+		</div>
+
+		<ul class="show-user-ul">
+			<li>
+				<a><i class="fa fa-user-circle-o fa-2x"></i></a>
+			</li>
+		</ul>
+
+		<ul class="navbar-ul">
+			<li>
+				<%= link_to 'Publicaciones', posts_path %>
+			</li>
+			<li>
+				<%= link_to 'Usuarios', users_path %>
+			</li>
+		</ul>
+
+		<ul class="user-ul absolute z-index-2 top-65 dark-blue right-0 list-none box-shadow display-none">
+			<% if user_signed_in? %>
+				<li class="dark-pistache">
+					<%= link_to image_tag(current_user.avatar, class: 'box-200 circle'), user_path(current_user) %>
+				</li>
+				<li>
+					<%= link_to 'Editar cuenta', edit_user_registration_path %>
+				</li>
+				<li>
+					<%= link_to 'Cerrar sesión', destroy_user_session_path, method: :delete %>
+				</li>
+			<% else %>
+				<li class="dark-pistache">
+					<a>
+						<%= image_tag('user-avatar.png', class: 'box-200 circle') %>
+					</a>
+				</li>
+				<li>
+					<%= link_to 'Iniciar sesión', new_user_session_path %>
+				</li>
+				<li>
+					<%= link_to 'Crear cuenta', new_user_registration_path %>
+				</li>
+			<% end %>
+		</ul>
+	</nav>
+</header>

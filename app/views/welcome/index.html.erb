@@ -1,0 +1,113 @@
+<div class="row">
+  <div class="col-xs-12 durango-img-container box-shadow display-none">
+    <%= image_tag ("durango.jpg"), class: "full-width block" %>
+  </div>
+
+  <!-- Seccion de twitch -->
+  <div id="twitch" class="col-lg-6 col-sm-6 col-xs-12 relative box-shadow medium-transition">
+    <a href="https://www.twitch.tv/richarlivex" target="_blank">
+      <div class="row">
+        <div class="col-xs-4 social-container height-225 flex center-items justify-content">
+          <%= image_tag ("twitch-logo.png"), class: "twitch-logo box-100" %>
+        </div>
+
+        <div class="col-xs-8 relative">
+          <div class="social-info-container height-225 flex center-items justify-content row center-xs">
+            <div class="row col-xs-12">
+              <div class="col-xs-12">
+                <p class="social-title white-font font-27 bold-font">TWITCH</p>
+              </div>
+              <div class="col-xs-12">
+                <p class="social-username white-font font-22"><%= @twitch.username %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <% if @twitch.disconnected? %>
+          <p class="twitch-status absolute top-0 right-0 box-padd-10 z-index-1 box-shadow red-flat white-font font-20">
+            Desconectado
+          </p>
+        <% else %>
+          <p class="twitch-status absolute top-0 right-0 box-padd-10 z-index-1 box-shadow dark-pistache white-font font-20">
+            En línea
+          </p>
+        <% end %>
+      </div>
+    </a>
+  </div>
+
+  <!-- Seccion de youtube -->
+  <div id="youtube" class="col-lg-6 col-sm-6 col-xs-12 relative box-shadow medium-transition">
+    <a href="https://www.youtube.com/channel/UC6pnzkOg-rgqCUY3AfKJoOA" target="_blank">
+      <div class="row">
+        <div class="col-xs-4 social-container height-225 flex center-items justify-content">
+          <%= image_tag ("youtube-logo.png"), class: "youtube-logo height-75" %>
+        </div>
+
+        <div class="col-xs-8 relative">
+          <div class="social-info-container height-225 flex center-items justify-content row center-xs">
+            <div class="row col-xs-12">
+              <div class="col-xs-12">
+                <p class="social-title white-font font-27 bold-font">YOUTUBE</p>
+              </div>
+              <div class="col-xs-12">
+                <p class="social-username white-font font-22">Facilitops</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <!-- Seccion de github-->
+  <div id="github" class="col-lg-6 col-sm-6 col-xs-12 relative box-shadow medium-transition">
+    <a href="https://github.com/RicharCor" target="_blank">
+
+      <div class="row">
+        <div class="col-xs-4 social-container height-225 flex center-items justify-content">
+          <%= image_tag ("github-logo.png"), class: "github-logo height-115" %>
+        </div>
+
+        <div class="col-xs-8 relative">
+          <div class="social-info-container height-225 flex center-items justify-content row center-xs">
+            <div class="row col-xs-12">
+              <div class="col-xs-12">
+                <p class="social-title white-font font-27 bold-font">GITHUB</p>
+              </div>
+              <div class="col-xs-12">
+                <p class="social-username white-font font-22">RicharCor</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <!-- Seccion de github gist -->
+  <div id="gist" class="col-lg-6 col-sm-6 col-xs-12 relative box-shadow medium-transition">
+    <a href="https://gist.github.com/RicharCor" target="_blank">
+      <div class="row">
+        <div class="col-xs-4 social-container height-225 flex center-items justify-content">
+          <%= image_tag ("gist-logo.png"), class: "gist-logo height-90" %>
+        </div>
+
+        <div class="col-xs-8 relative">
+          <div class="social-info-container height-225 flex center-items justify-content row center-xs">
+            <div class="row col-xs-12">
+              <div class="col-xs-12">
+                <p class="social-title white-font font-27 bold-font">GITHUB GIST</p>
+              </div>
+              <div class="col-xs-12">
+                <p class="social-username white-font font-22">RicharCor</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno

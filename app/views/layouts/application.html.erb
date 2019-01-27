@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog responsivo</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Sarabun:300,300i,400,400i,700" rel="stylesheet">
+    <!-- META TAGS -->
+    <!-- Hace escalado de pixeles dependiendo del dispositivo movil -->
+    <meta name="viewport" content="width = device-width, initial-scale = 1"/>
+    <!-- Cambia el color de la pestaña en el navegador -->
+    <meta name="theme-color" content="#455A64"/>
+  </head>
+
+  <body id="global-box">
+    <%= render "layouts/header" %>
+
+    <div class="margin-top-65">
+      <div id="notices" class="fixed full z-index-2 row">
+        <% if notice %>
+          <div class="notice row col-xs-12 large-padding flex center-items">
+            <i class="fa fa-check font-20 col-xs-1 center-text no-padding"></i>
+
+            <p class="col-xs-10">
+              <%= notice %>
+            </p>
+
+            <div class="close-notice right pointer col-xs-1 no-padding center-text">
+              <i class="fa fa-times font-20"></i>
+            </div>
+          </div>
+        <%end%>
+      </div>
+
+      <div id="alerts" class="fixed full z-index-2 row">
+        <% if alert %>
+          <div class="alert red-flat-text row col-xs-12 large-padding flex center-items">
+            <i class="fa fa-warning font-20 col-xs-1 center-text no-padding"></i>
+
+            <p class="col-xs-10">
+              <%= alert %>
+            </p>
+
+            <div class="close-alert right pointer col-xs-1 no-padding center-text">
+              <i class="fa fa-times font-20"></i>
+            </div>
+          </div>
+        <%end%>
+      </div>
+
+      <%= yield %>
+    </div>
+  </body>
+
+</html>

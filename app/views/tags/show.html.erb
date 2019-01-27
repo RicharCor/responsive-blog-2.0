@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @tag.title %>
+</p>
+
+<ul>
+  <% @tag.posts.each do |post| %>
+  <li>
+    <%= link_to post.title, post %>
+  </li>
+  <% end %>
+</ul>
+
+<%= link_to 'Edit', edit_tag_path(@tag) %> |
+<%= link_to 'Back', tags_path %>
